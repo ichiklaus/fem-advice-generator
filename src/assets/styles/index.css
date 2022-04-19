@@ -2,7 +2,7 @@
 @import "./_variables.css";
 @import "./card.css";
 
-body {
+body, footer {
   font-family: "Manrope", sans-serif;
   background: var(--dark-blue);
 }
@@ -11,4 +11,32 @@ body {
 html,
 body {
   height: 100%;
+}
+
+.attribution {
+  font-size: .7rem;
+  text-align: center;
+}
+
+.attribution, .attribution a {
+  color: var(--light-cyan);
+
+}
+
+.attribution a {
+  text-decoration: none;
+}
+
+.attribution a:hover {
+  color: var(--neon-green);
+  transition: all .4s linear;
+  text-decoration: underline;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: .75;
+  margin-bottom: .5rem;
 }
