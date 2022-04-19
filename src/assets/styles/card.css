@@ -1,0 +1,91 @@
+
+
+.card-bg--gb {
+  background-color: var(--dark-grayish-blue) !important;
+}
+
+.card-tc-font {
+  font-family: "Manrope", "Roboto", sans-serif !important;
+}
+
+.card-tc-font.advice {
+  font-size: var(--quote-font-size);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-tc--lc {
+  color: var(--light-cyan) !important;
+}
+
+.card-tc--c {
+  text-align: center;
+}
+
+.card-tc--ng {
+  color: var(--neon-green) !important;
+}
+
+.card-divider.desktop:after {
+  content: url("../images/pattern-divider-desktop.svg");
+}
+
+.card-divider {
+  position: absolute;
+  bottom: 280px;
+  left: 50%;
+  transform: translate(-50%, 50%);
+}
+
+.divider-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 55rem;
+}
+
+.card-button--ng {
+  background-color: var(--neon-green) !important;
+}
+
+.card-button--ng {
+  /* box-shadow: 0 0 20px 10px blue; */
+  box-shadow: var(--neon-green) 0px 0px 20px, rgba(17, 17, 26, 0.1) 0px 20px 16px, var(--neon-green) 0px 0px 10px !important;
+  transition: ease-in-out 200ms;
+}
+
+.icon-dice {
+  text-align: center;
+  position: relative;
+  width: auto;
+  height: 70px;
+}
+
+.icon-dice::after {
+  content: url("../images/icon-dice.svg");
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-45%, -35%);
+}
+
+@media screen and (max-width: 375px) {
+  .card-divider.mobile:after {
+    content: url("../images/pattern-divider-mobile.svg");
+  }
+  
+.card-divider {
+  bottom: 250px;
+}
+
+  .card-layout {
+    height: 55vh !important;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .card-divider {
+    bottom: 230px;
+  }
+}

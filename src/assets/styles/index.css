@@ -1,0 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@800");
+@import "./_variables.css";
+@import "./card.css";
+
+body {
+  font-family: "Manrope", sans-serif;
+  background: var(--dark-blue);
+}
+
+#root,
+html,
+body {
+  height: 100%;
+}
