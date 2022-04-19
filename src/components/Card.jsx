@@ -44,11 +44,13 @@ export default class Card extends Component {
 
   refreshAdvice = () => {
     this.adviceGenerator("https://api.adviceslip.com/advice");
+    // window.location.reload(false);
   };
 
   render() {
     return (
       <Container
+        className=" animated fadeIn"
         sx={{
           display: "flex",
           alignItems: "center",
@@ -64,30 +66,31 @@ export default class Card extends Component {
               borderRadius: 4,
             }}
           >
-            <CardContent
-              sx={{
-                height: "40%",
-              }}
-            >
-              <Typography
-                className="card-tc-font card-tc--c card-tc--ng"
+              <CardContent
+                className="  "
                 sx={{
-                  mt: 4,
-                  mb: 1,
+                  height: "40%",
                 }}
               >
-                {`Advice #${this.state.adviceNumber}`}
-              </Typography>
-              <Typography
-                className="card-tc-font advice card-tc--lc card-tc--c"
-                sx={{
-                  mt: 1,
-                  px: 4,
-                }}
-              >
-                {`"${this.state.advice}"`}
-              </Typography>
-            </CardContent>
+                <Typography
+                  className="card-tc-font card-tc--c card-tc--ng animated fadeIn"
+                  sx={{
+                    mt: 4,
+                    mb: 1,
+                  }}
+                >
+                  {`Advice #${this.state.adviceNumber}`}
+                </Typography>
+                <Typography
+                  className="card-tc-font advice card-tc--lc card-tc--c animated fadeIn"
+                  sx={{
+                    mt: 1,
+                    px: 4,
+                  }}
+                >
+                  {`"${this.state.advice}"`}
+                </Typography>
+              </CardContent>
             <div className="divider-wrapper">
               <i className="card-divider desktop mobile"></i>
             </div>

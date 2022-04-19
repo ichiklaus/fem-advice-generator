@@ -187,3 +187,22 @@
     transform: translate(-50%, 100%) !important;
   }
 }
+
+.animated {
+  animation-fill-mode: both;
+  animation-duration: 1000ms;
+}
+
+.fadeIn {
+  animation-name: fadeIn;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0%;
+  }
+
+  100% {
+    opacity: 100%;
+  }
+}
