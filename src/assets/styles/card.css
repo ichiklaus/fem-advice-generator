@@ -1,4 +1,11 @@
+.card-wrapper {
+  position: relative;
+}
 
+.card-layout {
+  height: 35vh !important;
+  width: 30rem !important;
+}
 
 .card-bg--gb {
   background-color: var(--dark-grayish-blue) !important;
@@ -27,13 +34,20 @@
   color: var(--neon-green) !important;
 }
 
+.action-wrapper {
+  position: absolute;
+  left: 50%;
+  top: 60%;
+  transform: translate(-50%, 100%);
+}
+
 .card-divider.desktop:after {
   content: url("../images/pattern-divider-desktop.svg");
 }
 
 .card-divider {
   position: absolute;
-  bottom: 280px;
+  bottom: 20%;
   left: 50%;
   transform: translate(-50%, 50%);
 }
@@ -42,16 +56,16 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 55rem;
+  margin-top: 2rem;
 }
 
 .card-button--ng {
   background-color: var(--neon-green) !important;
 }
 
-.card-button--ng {
-  /* box-shadow: 0 0 20px 10px blue; */
-  box-shadow: var(--neon-green) 0px 0px 20px, rgba(17, 17, 26, 0.1) 0px 20px 16px, var(--neon-green) 0px 0px 10px !important;
+.card-button--ng:hover {
+  box-shadow: var(--neon-green) 0px 0px 20px,
+    rgba(17, 17, 26, 0.1) 0px 20px 16px, var(--neon-green) 0px 0px 10px !important;
   transition: ease-in-out 200ms;
 }
 
@@ -70,22 +84,106 @@
   transform: translate(-45%, -35%);
 }
 
-@media screen and (max-width: 375px) {
+@media all and (min-width: 900px) and (max-width: 1023px) {
+  .card-divider.mobile:after {
+    content: url("../images/pattern-divider-desktop.svg");
+  }
+  .card-layout {
+    height: 60vh !important;
+    width: auto !important;
+  }
+  .action-wrapper {
+    top: 55% !important;
+    transform: translate(-50%, 100%) !important;
+  }
+}
+
+@media all and (min-width: 768px) and (max-width: 820px) {
   .card-divider.mobile:after {
     content: url("../images/pattern-divider-mobile.svg");
   }
-  
-.card-divider {
-  bottom: 250px;
-}
-
   .card-layout {
-    height: 55vh !important;
+    height: 20vh !important;
+    width: auto !important;
+  }
+
+  .action-wrapper {
+    top: 55% !important;
+    transform: translate(-50%, 95%) !important;
   }
 }
 
-@media screen and (max-width: 1024px) {
-  .card-divider {
-    bottom: 230px;
+@media all and (min-width: 844px) and (max-width: 896px) {
+  .card-divider.mobile:after {
+    content: url("../images/pattern-divider-mobile.svg");
+  }
+
+  .card-layout {
+    height: 60vh !important;
+    width: auto !important;
+  }
+
+  .action-wrapper {
+    top: 65% !important;
+    transform: translate(-50%, 60%) !important;
+  }
+}
+@media all and (min-width: 601px) and (max-width: 767px) {
+  .card-layout {
+    height: 70vh !important;
+    width: auto !important;
+  }
+
+  .action-wrapper {
+    top: 55% !important;
+    transform: translate(-50%, 100%) !important;
+  }
+}
+
+@media all and (min-width: 480px) and (max-width: 600px) {
+  .card-divider.mobile:after {
+    content: url("../images/pattern-divider-mobile.svg");
+  }
+
+  .card-layout {
+    height: 70vh !important;
+    width: auto !important;
+  }
+
+  .action-wrapper {
+    top: 65% !important;
+    transform: translate(-50%, 55%) !important;
+  }
+}
+
+@media all and (min-width: 376px) and (max-width: 479px) {
+  .card-divider.mobile:after {
+    content: url("../images/pattern-divider-mobile.svg");
+  }
+
+  .card-layout {
+    height: 35vh !important;
+    width: auto !important;
+  }
+
+  .action-wrapper {
+    top: 65% !important;
+    transform: translate(-50%, 95%) !important;
+  }
+}
+
+@media all and (max-width: 375px) {
+  .card-divider.mobile:after {
+    content: url("../images/pattern-divider-mobile.svg");
+  }
+
+  .card-layout {
+    height: 55vh !important;
+    width: auto !important;
+  }
+
+  .action-wrapper {
+    top: 65% !important;
+    transform: translate(-50%, 100%) !important;
   }
 }
